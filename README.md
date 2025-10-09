@@ -1,13 +1,13 @@
-# Hybrid Deep Learning Ensemble for Accurate Cardiac Segmentation
+# Towards Clinical-Grade Cardiac MRI Segmentation: An Ensemble of Improved UNet Architectures
 
 This repository contains the implementation of our research on cardiac segmentation using a hybrid deep learning ensemble model on echocardiography datasets, as presented in our comprehensive framework.
 
 ## 📄 Publication
-**Title:** A Hybrid Deep Learning Ensemble for Accurate Cardiac Segmentation in Echocardiography  
+**Title:** Towards Clinical-Grade Cardiac MRI Segmentation: An Ensemble of Improved UNet Architectures 
 **Journal:** medRxiv  
-**DOI:** https://doi.org/10.1101/2025.09.03.25335044  
-**Publication Date:** September 9, 2025  
-**URL:** https://www.medrxiv.org/content/10.1101/2025.09.03.25335044v1
+**DOI:** https://doi.org/10.1101/2025.10.08.25337578 
+**Publication Date:**  October 09, 2025.  
+**URL:** https://www.medrxiv.org/content/10.1101/2025.10.08.25337578v1
 
 ## 📊 Abstract
 Cardiac segmentation from echocardiography is crucial for diagnosing cardiovascular diseases and assessing cardiac function. In this study, we propose a hybrid deep learning ensemble model for automatic segmentation of cardiac structures from 2-chamber echocardiography views. Our framework integrates multiple U-Net architectures with advanced meta-learning techniques to combine their predictive strengths. Experimental evaluations on benchmark cardiac datasets demonstrate that the proposed ensemble achieves superior segmentation performance with high Dice coefficients across all cardiac structures. These results highlight the potential of hybrid ensemble methods as reliable computer-aided diagnostic tools for cardiology, contributing to accurate and efficient cardiac analysis.
@@ -142,7 +142,7 @@ For academic collaboration or research verification requests requiring access to
 ## Citation
 If you use this work in your research, please cite our paper:
 
-Rahi, A. (2025). Towards Clinical-Grade Cardiac MRI Segmentation: An Ensemble of Improved UNet Architectures. medRxiv. https://doi.org/10.1101/2025.09.03.25335044
+Rahi, A. (2025). Towards Clinical-Grade Cardiac MRI Segmentation: An Ensemble of Improved UNet Architectures. medRxiv. https://doi.org/10.1101/2025.10.08.25337578
 
 If you use the code implementation in your work, please also cite:
 
