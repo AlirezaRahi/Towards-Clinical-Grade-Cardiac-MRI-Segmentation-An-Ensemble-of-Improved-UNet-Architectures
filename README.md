@@ -1,6 +1,19 @@
+![Python](https://img.shields.io/badge/python-3.8+-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
+![Medical Imaging](https://img.shields.io/badge/domain-cardiac--MRI-red)
+![Status](https://img.shields.io/badge/status-research-green)
+
+
 **Towards Clinical-Grade Cardiac MRI Segmentation: An Ensemble of Improved UNet Architectures**
 
 This repository contains the implementation of our research on cardiac segmentation using a hybrid deep learning ensemble model on echocardiography datasets, as presented in our comprehensive framework.
+## Who Should Use This Repository
+
+This repository is designed for:
+- Medical imaging researchers working on cardiac MRI
+- Deep learning practitioners in biomedical segmentation
+- Graduate students participating in medical imaging challenges (e.g., ACDC)
+- Clinicians and engineers exploring automated cardiac analysis tools
 
 ### 📄 Publication
 **Title:** Towards Clinical-Grade Cardiac MRI Segmentation: An Ensemble of Improved UNet Architectures
@@ -71,7 +84,7 @@ python model_results_analysis.py
 **Typical Workflow:**
 1. **Data Preprocessing:** Automatic resizing, normalization, and augmentation
 2. **Base Model Training:** Individual U-Net models trained for 150 epochs
-3. **Meta-Learner Training:** Ensemble combination optimization
+3. **Meta-Learning Integration**: Performance enhancement via ensemble-style training strategies
 4. **Evaluation:** Comprehensive performance analysis with multiple metrics
 
 ### 📊 Performance Metrics
