@@ -96,17 +96,19 @@ python model_results_analysis.py
 ### 📊 Performance Metrics
 ![Segmentation Results](ROC_All.png)
 
-![Dice Scores]()
-![Segmentation Results](DICE SCORE Comparison _All Models.png)
+![Dice Scores](dice.png)
+
 
 
 The framework evaluates performance using:
-- **Dice Coefficient:** For each cardiac structure (Background, LV, Myocardium, RV)
-- **Accuracy:** Overall pixel-wise classification accuracy
-- **Confusion Matrix:** Per-class performance analysis
-- **ROC Curves:** Model discrimination capability
-- **Visual Comparisons:** Sample prediction visualization
 
+```md
+- **Dice Coefficient**: Per-class overlap metric (Background, LV, Myocardium, RV)
+- **Accuracy**: Overall pixel-wise classification accuracy
+- **Confusion Matrix**: Class-wise error analysis
+- **ROC Curves**: Discrimination capability per anatomical structure
+- **Qualitative Visualization**: Sample prediction vs. ground truth comparison
+```
 ###  Project Structure
 ```
 cardiac-segmentation-ensemble/
@@ -118,61 +120,70 @@ cardiac-segmentation-ensemble/
 └── requirements.txt
 ```
 
-###  Key Features
-- **Advanced Data Pipeline:** Intelligent preprocessing with class-aware augmentation
-- **Multi-Model Ensemble:** Combines strengths of different U-Net architectures
-- **Meta-Learning:** Learns optimal combination of base model predictions
-- **Comprehensive Evaluation:** Extensive metrics and visualization tools
-- **Medical-Grade Validation:** Ready for clinical application with performance thresholds
+## Key Features
 
-### Model Performance
-Typical performance metrics achieved:
-- **Ensemble Mean Dice:** >0.85
-- **LV Segmentation Dice:** >0.90
-- **Myocardium Dice:** >0.80
-- **Background Dice:** >0.95
-- **Overall Accuracy:** >0.90
+- **Advanced Data Pipeline**: Intelligent preprocessing with class-aware augmentation
+- **Multi-Model Ensemble**: Combines complementary U-Net architectures
+- **Meta-Learning Strategy**: Learnable fusion of base model predictions
+- **Comprehensive Evaluation**: Extensive quantitative metrics and visual analysis
+- **Research-Grade Validation**: Designed to meet clinical research performance standards
 
-###  Model Availability
-Due to the large size of trained model files and dataset licensing considerations, the actual model weights and dataset are not publicly hosted in this repository.
 
-The complete source code for data preprocessing, model architecture definition, training, and evaluation is provided, enabling full reproducibility of our results.
+## Model Performance
 
-For academic collaboration or research verification requests requiring access to the pre-trained models, please contact the authors directly.
+Typical performance achieved on held-out test data:
+
+- **Ensemble Mean Dice**: > 0.85
+- **Left Ventricle Dice**: > 0.90
+- **Myocardium Dice**: > 0.80
+- **Background Dice**: > 0.95
+- **Overall Accuracy**: > 0.90
+
+
+## 🔒 Model Availability
+
+Due to the large size of trained model weights and dataset licensing constraints,
+pre-trained models and raw datasets are not publicly hosted.
+
+The repository provides complete source code for:
+- Data preprocessing
+- Model architecture definition
+- Ensemble training
+- Evaluation and visualization
+
+This ensures full methodological transparency and reproducibility.
+
+For academic collaboration or verification requests requiring access to pre-trained
+models, please contact the author directly.
+
 
 ---
 
-###  Citation
-If you use this work in your research, please cite our paper:
+##  Citation
 
-**Rahi, A. (2025). Towards Clinical-Grade Cardiac MRI Segmentation: An Ensemble of Improved UNet Architectures. medRxiv. https://doi.org/10.1101/2025.10.08.25337578**
+### Paper
+Rahi, A. (2025). *Towards Clinical-Grade Cardiac MRI Segmentation: An Ensemble of Improved UNet Architectures*.  
+**medRxiv**. https://doi.org/10.1101/2025.10.08.25337578
 
-If you use the code implementation in your work, please also cite:
+### Code
+Rahi, A. (2025). *Towards Clinical-Grade Cardiac MRI Segmentation: An Ensemble of Improved UNet Architectures* [Computer software].  
+GitHub Repository: https://github.com/AlirezaRahi/Towards-Clinical-Grade-Cardiac-MRI-Segmentation-An-Ensemble-of-Improved-UNet-Architectures
 
-**Rahi, A. (2025). Towards Clinical-Grade Cardiac MRI Segmentation: An Ensemble of Improved UNet Architectures [Computer software]. GitHub repository, AlirezaRahi/Towards-Clinical-Grade-Cardiac-MRI-Segmentation-An-Ensemble-of-Improved-UNet-Architectures. Retrieved from https://github.com/AlirezaRahi/Towards-Clinical-Grade-Cardiac-MRI-Segmentation-An-Ensemble-of-Improved-UNet-Architectures**
-
-### 👨‍💻 Author
+### Author
 **Alireza Rahi**
 - **Email:** alireza.rahi@outlook.com
 - **LinkedIn:** https://www.linkedin.com/in/alireza-rahi-6938b4154/
 - **GitHub:** https://github.com/AlirezaRahi
 
-### 📜 License
-This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0).
+##  License
 
-**This means you are free to:**
-- **Share** — copy and redistribute the material in any medium or format for non-commercial purposes.
+This project is licensed under the **Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)**.
 
-**Under the following terms:**
-- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
-- **NonCommercial** — You may not use the material for commercial purposes.
-- **NoDerivatives** — If you remix, transform, or build upon the material, you may not distribute the modified material.
+You may share the work for non-commercial purposes with proper attribution.
+Commercial use or distribution of modified versions is strictly prohibited.
 
-**Summary:** This work may be read and downloaded for personal use only. It may be shared in its complete and unaltered form for non-commercial purposes, provided that the author's name, the title of the work, and a link to the original source and the license are clearly cited. Any modification, adaptation, commercial use, or distribution for profit is strictly prohibited.
+ Full license text: https://creativecommons.org/licenses/by-nc-nd/4.0/
 
-For permissions beyond the scope of this license, please contact the author directly.
-
-![CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)
 
 **Copyright (c) 2025 Alireza Rahi**  
 *For licensing inquiries, please contact the author.*
