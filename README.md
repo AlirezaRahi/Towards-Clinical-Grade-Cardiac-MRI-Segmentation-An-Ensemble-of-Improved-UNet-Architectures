@@ -95,10 +95,10 @@ python model_results_analysis.py
 
 ### 📊 Performance Metrics
 ![Segmentation Results](ROC_All.png)
-![Dice Scores](DICE SCORE Comparison _All Models.png)
-![Segmentation Results](Confusion Matrix _All.png)
-![Dice Scores](Dice scores per Class Ensemble.png)
-![Segmentation Results](sample_predictions.png)
+
+![Dice Scores]()
+![Segmentation Results](DICE SCORE Comparison _All Models.png)
+
 
 The framework evaluates performance using:
 - **Dice Coefficient:** For each cardiac structure (Background, LV, Myocardium, RV)
