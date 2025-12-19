@@ -1,0 +1,13 @@
+Model,Class,Dice_Score
+unet_advanced,Background,0.9797422835367235
+unet_advanced,LV,0.9323889972000433
+unet_advanced,Myocardium,0.8528593105801766
+unet_advanced,RV,0.861209634420527
+deep_unet_improved,Background,0.9776269898999929
+deep_unet_improved,LV,0.9250803454404919
+deep_unet_improved,Myocardium,0.8384867833541547
+deep_unet_improved,RV,0.849702427811153
+Ensemble,Background,0.980055934706994
+Ensemble,LV,0.933851213058638
+Ensemble,Myocardium,0.8562770450647628
+Ensemble,RV,0.8661806295221257

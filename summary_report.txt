@@ -1,0 +1,33 @@
+============================================================
+COMPREHENSIVE MODEL ANALYSIS REPORT
+============================================================
+Generated on: 2025-10-08 02:43:01
+Model directory: C:\Alex The Great\Project\ensemble_cardiac_fixed_20251005_143351
+Number of classes: 4
+
+📊 UNET_ADVANCED:
+   Mean Dice: 0.9066
+   Background: 0.9797
+   LV: 0.9324
+   Myocardium: 0.8529
+   RV: 0.8612
+
+📊 DEEP_UNET_IMPROVED:
+   Mean Dice: 0.8977
+   Background: 0.9776
+   LV: 0.9251
+   Myocardium: 0.8385
+   RV: 0.8497
+
+📊 ENSEMBLE:
+   Mean Dice: 0.9091
+   Background: 0.9801
+   LV: 0.9339
+   Myocardium: 0.8563
+   RV: 0.8662
+
+🏆 BEST PERFORMING MODEL:
+   Ensemble with mean Dice: 0.9091
+
+🎯 EXCELLENT PERFORMANCE - Ready for clinical use!
+============================================================
