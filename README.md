@@ -15,7 +15,7 @@ This repository is designed for:
 - Graduate students participating in medical imaging challenges (e.g., ACDC)
 - Clinicians and engineers exploring automated cardiac analysis tools
 
-### 📄 Publication
+###  Publication
 **Title:** Towards Clinical-Grade Cardiac MRI Segmentation: An Ensemble of Improved UNet Architectures
 **Journal:** medRxiv
 **DOI:** https://doi.org/10.1101/2025.10.08.25337578
@@ -93,7 +93,7 @@ python model_results_analysis.py
 3. **Meta-Learning Integration**: Performance enhancement via ensemble-style training strategies
 4. **Evaluation:** Comprehensive performance analysis with multiple metrics
 
-### 📊 Performance Metrics
+### Performance Metrics
 ![Segmentation Results](ROC_All.png)
 
 ![Dice Scores](dice.png)
@@ -140,7 +140,7 @@ Typical performance achieved on held-out test data:
 - **Overall Accuracy**: > 0.90
 
 
-## 🔒 Model Availability
+##  Model Availability
 
 Due to the large size of trained model weights and dataset licensing constraints,
 pre-trained models and raw datasets are not publicly hosted.
