@@ -22,10 +22,10 @@ This repository is designed for:
 **Publication Date:** October 09, 2025.
 **URL:** https://www.medrxiv.org/content/10.1101/2025.10.08.25337578v1
 
-### 📊 Abstract
+###  Abstract
 Cardiac segmentation from echocardiography is crucial for diagnosing cardiovascular diseases and assessing cardiac function. In this study, we propose a hybrid deep learning ensemble model for automatic segmentation of cardiac structures from 2-chamber echocardiography views. Our framework integrates multiple U-Net architectures with advanced meta-learning techniques to combine their predictive strengths. Experimental evaluations on benchmark cardiac datasets demonstrate that the proposed ensemble achieves superior segmentation performance with high Dice coefficients across all cardiac structures. These results highlight the potential of hybrid ensemble methods as reliable computer-aided diagnostic tools for cardiology, contributing to accurate and efficient cardiac analysis.
 
-### 🏗️ Model Architectures
+### Model Architectures
 **Advanced U-Net Model**
 A sophisticated U-Net architecture with increased capacity featuring:
 - Enhanced encoder-decoder structure with residual connections
@@ -46,15 +46,21 @@ The predictions from individual U-Net models are combined using:
 - Random Forest and Gradient Boosting meta-learners
 - Optimal combination learning for final segmentation
 
-### 📁 Dataset
+###  Dataset
 The model was trained and evaluated on cardiac echocardiography data:
 - **Source:** CAMUS (Cardiac Acquisitions for Multi-structure Ultrasound Segmentation)
 - **Content:** 2-chamber view echocardiography images with expert annotations
 - **Structures:** Background, Left Ventricle (LV), Myocardium, Right Ventricle (RV)
 - **Phases:** End-diastole (ED) and End-systole (ES) frames
 
-### 🚀 Installation & Requirements
-To install the required dependencies, run:
+## Installation
+
+### Prerequisites
+- Python 3.8+
+- CUDA-compatible GPU (recommended)
+
+### Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -70,7 +76,7 @@ pip install -r requirements.txt
 - pandas>=1.4.2
 - joblib>=1.1.0
 
-### 💻 Usage
+###  Usage
 **Training the Ensemble Model**
 ```bash
 python cardiac_ensemble_fixed_final.py
@@ -88,6 +94,12 @@ python model_results_analysis.py
 4. **Evaluation:** Comprehensive performance analysis with multiple metrics
 
 ### 📊 Performance Metrics
+![Segmentation Results](ROC_All.png)
+![Dice Scores](DICE SCORE Comparison _All Models.png)
+![Segmentation Results](Confusion Matrix _All.png)
+![Dice Scores](Dice scores per Class Ensemble.png)
+![Segmentation Results](sample_predictions.png)
+
 The framework evaluates performance using:
 - **Dice Coefficient:** For each cardiac structure (Background, LV, Myocardium, RV)
 - **Accuracy:** Overall pixel-wise classification accuracy
@@ -95,7 +107,7 @@ The framework evaluates performance using:
 - **ROC Curves:** Model discrimination capability
 - **Visual Comparisons:** Sample prediction visualization
 
-### 📁 Project Structure
+###  Project Structure
 ```
 cardiac-segmentation-ensemble/
 ├── cardiac_ensemble_fixed_final.py    # Main ensemble training script
@@ -106,14 +118,14 @@ cardiac-segmentation-ensemble/
 └── requirements.txt
 ```
 
-### ✨ Key Features
+###  Key Features
 - **Advanced Data Pipeline:** Intelligent preprocessing with class-aware augmentation
 - **Multi-Model Ensemble:** Combines strengths of different U-Net architectures
 - **Meta-Learning:** Learns optimal combination of base model predictions
 - **Comprehensive Evaluation:** Extensive metrics and visualization tools
 - **Medical-Grade Validation:** Ready for clinical application with performance thresholds
 
-### 📈 Model Performance
+### Model Performance
 Typical performance metrics achieved:
 - **Ensemble Mean Dice:** >0.85
 - **LV Segmentation Dice:** >0.90
@@ -121,7 +133,7 @@ Typical performance metrics achieved:
 - **Background Dice:** >0.95
 - **Overall Accuracy:** >0.90
 
-### 🔒 Model Availability
+###  Model Availability
 Due to the large size of trained model files and dataset licensing considerations, the actual model weights and dataset are not publicly hosted in this repository.
 
 The complete source code for data preprocessing, model architecture definition, training, and evaluation is provided, enabling full reproducibility of our results.
@@ -130,7 +142,7 @@ For academic collaboration or research verification requests requiring access to
 
 ---
 
-### 📝 Citation
+###  Citation
 If you use this work in your research, please cite our paper:
 
 **Rahi, A. (2025). Towards Clinical-Grade Cardiac MRI Segmentation: An Ensemble of Improved UNet Architectures. medRxiv. https://doi.org/10.1101/2025.10.08.25337578**
